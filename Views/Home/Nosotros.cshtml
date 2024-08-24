@@ -1,0 +1,148 @@
+﻿@{
+    ViewData["Title"] = "Sobre Nosotros";
+}
+<div class="about-us-container">
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>@ViewData["Title"]</h1>
+            <p class="subtitle">Impulsando el futuro de las inversiones globales.</p>
+        </div>
+    </section>
+
+    <section class="mission-vision-values">
+        <div class="content-wrapper">
+            <div class="mission">
+                <h2>Nuestra Misión</h2>
+                <p>En AlphaTrade Corp., nos comprometemos a proporcionar soluciones de inversión de alto rendimiento a través de la innovación, la tecnología y un enfoque centrado en el cliente.</p>
+            </div>
+            <div class="vision">
+                <h2>Nuestra Visión</h2>
+                <p>Ser el líder mundial en servicios financieros, guiando a nuestros clientes hacia el éxito financiero sostenible.</p>
+            </div>
+            <div class="values">
+                <h2>Nuestros Valores</h2>
+                <ul>
+                    <li>Integridad: Operamos con transparencia y ética en todo lo que hacemos.</li>
+                    <li>Innovación: Desarrollamos soluciones de vanguardia para mantenernos a la vanguardia del mercado.</li>
+                    <li>Compromiso: Estamos dedicados al éxito de nuestros clientes y socios.</li>
+                    <li>Sostenibilidad: Creemos en inversiones responsables que beneficien a todos.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-section">
+        <h2>Conoce a Nuestro Equipo</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="~/images/ceo.jpeg" alt="CEO">
+                <h3>Juan Pérez</h3>
+                <p>CEO & Fundador</p>
+            </div>
+            <div class="team-member">
+                <img src="~/images/cfo.jpeg" alt="CFO">
+                <h3>María López</h3>
+                <p>Directora Financiera</p>
+            </div>
+            <div class="team-member">
+                <img src="~/images/cto.jpg" alt="CTO">
+                <h3>Carlos Martínez</h3>
+                <p>Director de Tecnología</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="history-section">
+        <h2>Nuestra Historia</h2>
+        <p>Fundada en 2010, AlphaTrade Corp. ha crecido rápidamente para convertirse en una de las empresas de inversión más respetadas en la industria financiera. A lo largo de los años, hemos superado desafíos, adoptado nuevas tecnologías y ampliado nuestra presencia global.</p>
+    </section>
+
+    <section class="cta-section">
+        <h2>Únete a Nosotros</h2>
+        <p>Forma parte de nuestra misión y contribuye al futuro de las finanzas globales.</p>
+        <a href="https://es.tradingview.com/" target="_blank" class="cta-button">Ver Oportunidades</a>
+    </section>
+</div>
+
+<style>
+    .about-us-container {
+        font-family: 'Arial', sans-serif;
+        color: #333;
+        line-height: 1.6;
+    }
+    .hero-section {
+        background: url("https://www.kandbaz.com/wp-content/uploads/2021/07/banner-bp.jpg");
+        background-size: cover;
+        padding: 80px 20px;
+        color: #ffffff;
+        text-align: center;
+    }
+    .hero-content h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+    .subtitle {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    .mission-vision-values {
+        background: #f5f5f5;
+        padding: 60px 20px;
+        margin-top: 60px;
+        text-align: center;
+    }
+    .mission-vision-values h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .content-wrapper {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .content-wrapper > div {
+        max-width: 30%;
+        margin-bottom: 20px;
+    }
+    .team-section {
+        padding: 60px 20px;
+        text-align: center;
+    }
+    .team-grid {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .team-member {
+        max-width: 30%;
+        margin-bottom: 20px;
+    }
+    .team-member img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        margin-bottom: 15px;
+    }
+    .history-section {
+        background: #f5f5f5;
+        padding: 60px 20px;
+        text-align: center;
+    }
+    .cta-section {
+        padding: 60px 20px;
+        text-align: center;
+    }
+    .cta-button {
+        background: #007BFF;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .cta-button:hover {
+        background: #2466e1;
+        color: #ffffff;
+    }
+</style>

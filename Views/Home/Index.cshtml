@@ -1,0 +1,232 @@
+﻿@{
+    ViewData["Title"] = "Inicio";
+}
+<div class="home-container">
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Bienvenido a AlphaTrade Corp.</h1>
+            <p>Liderando el futuro de las inversiones globales con tecnología y experiencia.</p>
+            <a asp-controller="OperarBolsa" asp-action="Index" class="cta-button">Opera con Nosotros</a>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="content-wrapper">
+            <div class="image-container">
+                <img src="~/images/logo.png" height="300px" alt="AlphaTrade Corp. Office">
+            </div>
+            <div class="text-container">
+                <h2>¿Quiénes Somos?</h2>
+                <p>AlphaTrade Corp. es una firma de inversiones líder que combina innovación y conocimiento para ofrecer soluciones financieras excepcionales. Nuestro equipo de expertos está comprometido a ayudarte a alcanzar tus metas financieras.</p>
+                <a class="cta-link" asp-controller="Home" asp-action="Nosotros">Más sobre nosotros</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <h2>¿Por Qué Elegirnos?</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <img src="~/images/innovacion.jpeg" height="100px" alt="Innovación">
+                <h3>Innovación</h3>
+                <p>Implementamos tecnología de vanguardia para maximizar tus rendimientos.</p>
+            </div>
+            <div class="feature">
+                <img src="~/images/experiencia.jpg" height="100px" alt="Experiencia">
+                <h3>Experiencia</h3>
+                <p>Años de experiencia en el mercado financiero global.</p>
+            </div>
+            <div class="feature">
+                <img src="~/images/confianza.jpeg" height="100px" alt="Confianza">
+                <h3>Confianza</h3>
+                <p>Más de 10,000 clientes satisfechos en todo el mundo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="statistics-section">
+        <h2>Datos Clave</h2>
+        <div class="stats-grid">
+            <div class="stat">
+                <h3>+15 Años</h3>
+                <p>De experiencia en el mercado.</p>
+            </div>
+            <div class="stat">
+                <h3>$5B+</h3>
+                <p>En activos gestionados.</p>
+            </div>
+            <div class="stat">
+                <h3>50+</h3>
+                <p>Premios a la excelencia.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <h2>Lo Que Dicen Nuestros Clientes</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial">
+                <p>"AlphaTrade Corp. transformó nuestra estrategia de inversión. Los resultados hablan por sí solos."</p>
+                <h4>- Laura Gómez</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Gracias a su equipo de expertos, he logrado alcanzar mis metas financieras mucho antes de lo previsto."</p>
+                <h4>- Andrés Ramírez</h4>
+            </div>
+            <div class="testimonial">
+                <p>"La tecnología y la innovación que utilizan en AlphaTrade Corp. es realmente impresionante."</p>
+                <h4>- Ana López</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>Empieza a Invertir Hoy</h2>
+        <p>Únete a AlphaTrade Corp. y da el primer paso hacia un futuro financiero seguro.</p>
+        <a href="https://wa.link/l94170" target="_blank" class="cta-button">Contáctanos</a>
+    </section>
+</div>
+
+<style>
+    .home-container {
+        font-family: 'Arial', sans-serif;
+        color: #333;
+        line-height: 1.6;
+    }
+    .hero-section {
+        background: url('https://economiavirtual.net/wp-content/uploads/2021/01/Inversion-1024x576.jpg') no-repeat center center;
+        background-size: cover;
+        padding: 100px 20px;
+        text-align: center;
+        color: white;
+    }
+    .hero-content h1 {
+        font-size: 56px;
+        margin-bottom: 20px;
+    }
+    .hero-content p {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    .cta-button {
+        background: #007BFF;
+        color: white;
+        padding: 12px 30px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+    .cta-button:hover {
+        background: #2466e1;
+        color: #ffffff;
+    }
+    .about-section {
+        padding: 60px 20px;
+        display: flex;
+        margin-top: 60px;
+        background: #f5f5f5;
+    }
+    .content-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .image-container {
+        flex: 1;
+        padding-right: 20px;
+    }
+    .image-container img {
+        width: 100%;
+        border-radius: 8px;
+    }
+    .text-container {
+        flex: 1;
+        padding-left: 20px;
+    }
+    .text-container h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .cta-link {
+        display: inline-block;
+        margin-top: 10px;
+        color: #007BFF;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .cta-link:hover {
+        text-decoration: underline;
+    }
+    .features-section {
+        padding: 60px 20px;
+        text-align: center;
+    }
+    .features-grid {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .feature {
+        flex: 1;
+        max-width: 30%;
+        margin-bottom: 20px;
+    }
+    .feature img {
+        width: 80px;
+        margin-bottom: 15px;
+    }
+    .feature h3 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .statistics-section {
+        padding: 60px 20px;
+        background: #f5f5f5;
+        text-align: center;
+    }
+    .stats-grid {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .stat {
+        flex: 1;
+        max-width: 30%;
+        margin-bottom: 20px;
+    }
+    .stat h3 {
+        font-size: 40px;
+        margin-bottom: 10px;
+        color: #007BFF;
+    }
+    .testimonials-section {
+        padding: 60px 20px;
+        text-align: center;
+    }
+    .testimonials-grid {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .testimonial {
+        flex: 1;
+        max-width: 30%;
+        margin-bottom: 20px;
+        background: #f5f5f5;
+        padding: 20px;
+        border-radius: 8px;
+    }
+    .testimonial p {
+        font-style: italic;
+    }
+    .testimonial h4 {
+        margin-top: 15px;
+        font-size: 18px;
+        color: #333;
+    }
+    .cta-section {
+        padding: 60px 20px;
+        text-align: center;
+    }
+</style>
